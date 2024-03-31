@@ -16,7 +16,7 @@ async function email() {
     for (var i = 0; i < number; i++) {
       composeButton.click();
       console.log('Clicked on the "Compose" button');
-      await sleep(waitTime); // Wait for a short period before adding text
+      await sleep(waitTime); /* Wait for a short period before adding text */
       await addText();
     }
   } else {
@@ -51,7 +51,7 @@ async function addText() {
     sendButton.click();
   } else {
     console.error('Input element not found');
-    await sleep(waitTime); // Wait for a short period before retrying
+    await sleep(waitTime); /* Wait for a short period before retrying*/
     await addText();
   }
 }
